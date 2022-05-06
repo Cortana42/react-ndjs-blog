@@ -30,7 +30,7 @@ function Login() {
 	}
 
 	return (
-		<div>
+		<div className='marg'>
 			<h1>Login</h1>
 			<form onSubmit={loginUser}>
 				<input
@@ -47,7 +47,8 @@ function Login() {
 					placeholder="Password"
 				/>
 				<br />
-				<input type="submit" value="Login" />
+				<br></br>
+				<input className='btn-green' type="submit" value="Login" />
 			</form>
 		</div>
 	)

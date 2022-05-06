@@ -31,7 +31,7 @@ function Register() {
 	}
 
 	return (
-		<div>
+		<div className='marg'>
 			<h1>Register</h1>
 			<form onSubmit={registerUser}>
 				<input
@@ -55,7 +55,8 @@ function Register() {
 					placeholder="Password"
 				/>
 				<br />
-				<input type="submit" value="Register" />
+				<br></br>
+				<input className='btn-blue' type="submit" value="Register" />
 			</form>
 		</div>
 	)

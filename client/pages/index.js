@@ -1,16 +1,28 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Login from '../components/login_form'
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Register</title>
-        <h1>Register</h1>
+        <div className='marg'>
+          <title>Acceuil</title>
+          <h1>Acceuil</h1>
+          <h4>Please join us so you can write your own comments !</h4>
+        </div>
       </Head>
-
+      <br></br>
+      <p>Create your new account</p>
+      <Link href="/register" >
+        <a>Register</a>
+      </Link>
+      <p>You already have an account ?</p>
+      <Link href="/login" >
+        <a>Login</a>
+      </Link>
+   
     </div>
   )
 }

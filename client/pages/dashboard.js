@@ -59,17 +59,20 @@ const Dashboard = () => {
 	}
 
 	return (
-		<div>
-			<h1>Your comment: {comment || 'No comment found'}</h1>
+		<div className='marg'>
+			<h1>Your comment:</h1>
 			<form onSubmit={updateComment}>
-				<input
+				<textarea className='comment'
 					type="text"
 					placeholder="Comment"
 					value={tempComment}
 					onChange={(e) => setTempComment(e.target.value)}
 				/>
+				<br></br>
+				<br></br>
 				<input type="submit" value="Update comment" />
 			</form>
+			<p>{comment || 'No comment found'}</p>
 		</div>
 	)
 }
